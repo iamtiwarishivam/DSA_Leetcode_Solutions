@@ -1,6 +1,6 @@
 class Solution {
     public static String reverseString(String s) {
-        // code here
+        // converting string to character array
         char rstr[] = s.toCharArray();
         int start = 0;
         int end = s.length()-1;
