@@ -1,0 +1,16 @@
+class Solution {
+    public static String reverseString(String s) {
+        // code here
+        char rstr[] = s.toCharArray();
+        int start = 0;
+        int end = s.length()-1;
+        while (start < end ){
+            char ch = rstr[start];
+            rstr[start] = rstr[end];
+            rstr[end] = ch;
+            start++;
+            end--;
+        }
+        return new String (rstr);
+    }
+}
